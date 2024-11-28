@@ -1,6 +1,6 @@
 {
   "files": {
-    "main.css": "/MiniApp/static/css/main.5097e3bd.css",
+    "main.css": "/MiniApp/static/css/main.80daae36.css",
     "main.js": "/MiniApp/static/js/main.033ae1aa.js",
     "static/media/man.png": "/MiniApp/static/media/man.883ecb45f50c91f94e35.png",
     "static/media/21.png": "/MiniApp/static/media/21.8acbcee26284c9fa827d.png",
@@ -21,11 +21,11 @@
     "static/media/bot3.png": "/MiniApp/static/media/bot3.734560e62fc6c3cb719f.png",
     "static/media/game6.png": "/MiniApp/static/media/game6.734560e62fc6c3cb719f.png",
     "index.html": "/MiniApp/index.html",
-    "main.5097e3bd.css.map": "/MiniApp/static/css/main.5097e3bd.css.map",
+    "main.80daae36.css.map": "/MiniApp/static/css/main.80daae36.css.map",
     "main.033ae1aa.js.map": "/MiniApp/static/js/main.033ae1aa.js.map"
   },
   "entrypoints": [
-    "static/css/main.5097e3bd.css",
+    "static/css/main.80daae36.css",
     "static/js/main.033ae1aa.js"
   ]
 }
