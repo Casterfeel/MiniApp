@@ -1,0 +1,31 @@
+{
+  "files": {
+    "main.css": "/MiniApp/static/css/main.f6e2d619.css",
+    "main.js": "/MiniApp/static/js/main.033ae1aa.js",
+    "static/media/man.png": "/MiniApp/static/media/man.883ecb45f50c91f94e35.png",
+    "static/media/21.png": "/MiniApp/static/media/21.8acbcee26284c9fa827d.png",
+    "static/media/game2.png": "/MiniApp/static/media/game2.8acbcee26284c9fa827d.png",
+    "static/media/game11.png": "/MiniApp/static/media/game11.df101c156001595e4141.png",
+    "static/media/bot2.png": "/MiniApp/static/media/bot2.9ee0abf2d33a91940f95.png",
+    "static/media/game5.png": "/MiniApp/static/media/game5.9ee0abf2d33a91940f95.png",
+    "static/media/bot1.png": "/MiniApp/static/media/bot1.033429abffff4812bcc7.png",
+    "static/media/game4.png": "/MiniApp/static/media/game4.033429abffff4812bcc7.png",
+    "static/media/game-card.png": "/MiniApp/static/media/game-card.ff9f1485f6da83778f50.png",
+    "static/media/game1.png": "/MiniApp/static/media/game1.ff9f1485f6da83778f50.png",
+    "static/media/game7.png": "/MiniApp/static/media/game7.d4951288ad4dff34cd7b.png",
+    "static/media/game8.png": "/MiniApp/static/media/game8.44aed749f47bc38bb839.png",
+    "static/media/311.png": "/MiniApp/static/media/311.124a64bf86890cc37cde.png",
+    "static/media/game3.png": "/MiniApp/static/media/game3.124a64bf86890cc37cde.png",
+    "static/media/game10.png": "/MiniApp/static/media/game10.964be50d42f28391e241.png",
+    "static/media/game9.png": "/MiniApp/static/media/game9.9654c09776249aad59ae.png",
+    "static/media/bot3.png": "/MiniApp/static/media/bot3.734560e62fc6c3cb719f.png",
+    "static/media/game6.png": "/MiniApp/static/media/game6.734560e62fc6c3cb719f.png",
+    "index.html": "/MiniApp/index.html",
+    "main.f6e2d619.css.map": "/MiniApp/static/css/main.f6e2d619.css.map",
+    "main.033ae1aa.js.map": "/MiniApp/static/js/main.033ae1aa.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.f6e2d619.css",
+    "static/js/main.033ae1aa.js"
+  ]
+}
