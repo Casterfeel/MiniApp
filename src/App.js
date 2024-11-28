@@ -4,7 +4,7 @@ import Main from './components/Main';
 import Footer from './components/Footer';
 import style from '../src/App.css'
 import FooterNav from './components/FooterNav';
-import {HashRouter as Router, Route, Routes, Link, useLocation} from 'react-router-dom';
+import {BrowserRouter as Router, Route, Routes, Link, useLocation} from 'react-router-dom';
 import PopularGamesPage from './components/PopularGamesPage';
 
 
