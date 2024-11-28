@@ -1,24 +1,28 @@
-import logo from './logo.svg';
-import './App.css';
+import React from 'react';
+import Header from './components/Header';
+import Main from './components/Main';
+import Footer from './components/Footer';
+import style from '../src/App.css'
+import FooterNav from './components/FooterNav';
+import {BrowserRouter as Router, Route, Routes, Link, useLocation} from 'react-router-dom';
+import PopularGamesPage from './components/PopularGamesPage';
+
 
 function App() {
+
+  const location = useLocation();
+  const hideHeader = location.pathname === '/popular-games'
+
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+      <div className="App">
+        {!hideHeader && <Header />}
+        <Routes>
+          <Route path="/" element={<Main />} />
+          <Route path="/popular-games" element={<PopularGamesPage />} />
+        </Routes>
+        <Footer />
+        <FooterNav />
+      </div>
   );
 }
 

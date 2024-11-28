@@ -1,38 +1,643 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+
+@media(max-width: 320px) {
+    .App {
+        overflow-x: hidden;
+    }
+    .header {
+        width: 320px;
+    }
+    .header__right {
+        display: flex;
+        flex-direction: column;
+        margin-right: 20px;
+    }
+
+    .header__right-price {
+        border-radius: 8px 8px 8px 8px !important;
+    }
+
+    .header__right-plus {
+        width: 100px !important;
+        margin-top: 5px; 
+    }
+    .main {
+        width: 300px;
+    }
+    .footer__info {
+        width: 320px;
+    }
+    .footer__copyright {
+        width: 320px;
+    }
+    .blocks {
+        width: 320px;
+    }
+    .main__welcome-block {
+        color: #fff;
+        border: none;
+        border-radius: 10px;
+        background-image: url('../src/assets/man.png');
+        background-size: 150% !important;
+        background-position: right ;
+        padding-left: 10px;
+    }
+    .popular__games-blocks img{
+        width: 100px;
+    }
+    .new__games-blocks img{
+        width: 100px;
+    }
+    .casino__games-blocks img{
+        width: 100px;
+    }
+    .sports__games-blocks img{
+        width: 100px;
+    }
+    .game__1 img {
+        width: 100px;
+    }
+    .game__2 img {
+        width: 100px;
+    }
+    .game__3 img {
+        width: 100px;
+    }
+    .game__4 img {
+        width: 100px;
+    }
+    .search__block {
+        width: 130px !important;
+    }
+    .field__left {
+        width: 136px !important;
+    }
+    .field__right {
+        width: 136px !important;
+    }
+}
+
+.poppins-light {
+    font-family: "Poppins", sans-serif;
+}
+
+* {
+    font-family: "Poppins";
+}
+
 .App {
-  text-align: center;
+    max-width: 390px;
+    width: 100%;
+    margin: 0 auto;
+    padding: 0;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.header {
+    background-color: #1D1D1D;
+    display: flex;
+    align-items: center ;
+    justify-content: space-between;
+    padding-left: 10px;
+    padding-right: 10px;
+}
+.header__left {
+    display: flex;
+    align-items: center;
+    gap: 12px;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.header__h {
+    color: #FFD60A;
+    font-weight: 800;
+    font-size: 32px;
+    line-height: 48px;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+.header__right {
+    display: flex;
+    align-items: center;
 }
 
-.App-link {
-  color: #61dafb;
+.header__right-plus {
+    height: 42px;
+    width: 42px;
+    background-color: #FFD60A;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: none;
+    border-radius: 8px;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.header__right-price {
+    color: #fff;
+    background-color: #0F0F0F;
+    height: 42px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-weight: 400;
+    font-size: 16px;
+    padding-left: 10px;
+    padding-right: 6px;
+    border-radius: 8px 0 0 8px;
+}
+
+.main {
+    background-color: #0F0F0F;
+    padding-top: 16px;
+    padding-left: 10px;
+    padding-right: 10px;
+}
+
+.main__welcome-block {
+    color: #fff;
+    border: none;
+    border-radius: 10px;
+    background-image: url('../src/assets/man.png');
+    background-size: 120%;
+    background-position: center;
+    padding-left: 10px;
+}
+
+.main__welcome-block h1 {
+    font-weight: 600;
+    font-size: 20px;
+    padding-top: 24px;
+}
+
+.main__welcome-block p {
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 20px;
+}
+
+.main__btn {
+    width: 100px;
+    height: 34px;
+    border: none;
+    border-radius: 8px;
+    font-weight: 600;
+    font-size: 14px;
+    margin-top: 40px;
+    margin-bottom: 24px;
+    cursor: pointer;
+}
+
+.main__search-block {
+    padding-top: 16px;
+    display: flex;
+    align-items: center;
+    gap: 16px;
+}
+
+.main__search {
+    width: 42px;
+    height: 42px;
+    background-color: #1D1D1D;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: none;
+    border-radius: 8px;
+}
+
+.main__pars {
+    color: #fff;
+    display: flex;
+    gap: 30px;
+    background-color: #1D1D1D;
+    height: 42px;
+    align-items: center;
+    border: none;
+    border-radius: 8px;
+    padding-right: 16px;
+    padding-left: 16px;
+}
+
+.main__pars p {
+    font-weight: 600;
+    font-size: 14px;
+}
+
+.yellow_par {
+    color: #FFD60A;
+    text-decoration: underline;
+}
+
+.popular__games-head {
+    display: flex;
+    color: #fff;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.popular__left {
+    display: flex;
+    align-items: center;
+    gap: 6px;
+}
+
+.popular__left h1 {
+    font-weight: 600;
+    font-size: 20px;
+}
+
+.popular__right p {
+    font-weight: 600;
+    font-size: 14px;
+    padding-top: 20px;
+}
+
+.popular__top {
+    display: flex;
+}
+
+.popular__bot {
+    display: flex;
+}
+
+.new__left {
+    display: flex;
+    align-items: center;
+    gap: 6px;
+}
+
+.new__left h1 {
+    font-weight: 600;
+    font-size: 20px;
+}
+
+.new__right p {
+    font-weight: 600;
+    font-size: 14px;
+}
+
+.new__games-head {
+    display: flex;
+    color: #fff;
+    align-items: center;
+    justify-content: space-between;
+    margin-top: 22px;
+}
+
+.new__top {
+    display: flex;
+}
+
+.new__bot {
+    display: flex;
+}
+
+.view {
+    margin-right: 26px;
+    cursor: pointer;
+}
+
+.casino__games-head {
+    display: flex;
+    color: #fff;
+    align-items: center;
+    justify-content: space-between;
+    margin-top: 22px;
+}
+
+.casino__left {
+    display: flex;
+    align-items: center;
+    gap: 6px;
+}
+
+.casino__left h1 {
+    font-weight: 600;
+    font-size: 20px;
+}
+
+.casino__right p {
+    font-weight: 600;
+    font-size: 14px;
+}
+
+.casino__games-head {
+    display: flex;
+    color: #fff;
+    align-items: center;
+    justify-content: space-between;
+    margin-top: 22px;
+}
+
+.casino__top {
+    display: flex;
+}
+
+.casino__bot {
+    display: flex;
+}
+
+
+.sports__games-head {
+    display: flex;
+    color: #fff;
+    align-items: center;
+    justify-content: space-between;
+    margin-top: 22px;
+}
+
+.sports__left {
+    display: flex;
+    align-items: center;
+    gap: 6px;
+}
+
+.sports__left h1 {
+    font-weight: 600;
+    font-size: 20px;
+}
+
+.sports__right p {
+    font-weight: 600;
+    font-size: 14px;
+}
+
+.sports__games-head {
+    display: flex;
+    color: #fff;
+    align-items: center;
+    justify-content: space-between;
+    margin-top: 22px;
+}
+
+.sports__top {
+    display: flex;
+}
+
+.sports__bot {
+    display: flex;
+    padding-bottom: 44px;
+}
+
+.footer__info {
+    background-color: #1D1D1D;
+}
+
+.footer__info-left p {
+    font-weight: 400;
+    font-size: 10px;
+    color: #E1E1E1;
+}
+
+.footer__info {
+    padding-left: 16px;
+    padding-top: 24px;
+}
+
+.footer__info-right p {
+    font-weight: 400;
+    font-size: 10px;
+    color: #E1E1E1;
+}
+
+.footer__info-top {
+    display: flex;
+    gap: 70px;
+}
+
+.footer__info-top {
+    border-bottom: 1px solid #333333;
+    padding-bottom: 36px;
+}
+
+.footer__left p {
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 20px;
+    color: #C8C8C8;
+}
+
+.footer__info-bot {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.footer__copyright {
+    background-color: black;
+    color: #fff;
+    text-align: center;
+    height: 62px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.footer__copyright p {
+    color: #A8A8A8;
+    font-weight: 400;
+    font-size: 10px;
+}
+
+.footer__right {
+    margin-right: 16px;
+    display: flex;
+    gap: 10px;
+}
+
+.blocks {
+    display: flex;
+    background-color: #1D1D1D;
+    justify-content: center;
+    gap: 35px;
+    padding-top: 15px;
+}
+
+.blocks p {
+    color: #A8A8A8;
+    font-weight: 500;
+    font-size: 11px;
+    margin: 0; 
+}
+
+
+.blocks img {
+    display: block; 
+    margin-bottom: 4px; 
+}
+
+.block2 p {
+    color: #FAFAFA;
+}
+
+.block1 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.block2 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.block3 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.block4 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.block5 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.popular__header {
+    background-color: #1D1D1D;
+    color: #fff;
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    padding-left: 16px;
+}
+
+.popular__header h1 {
+    font-weight: 600;
+    font-size: 20px;
+}
+
+.search__block {
+    display: flex;
+    align-items: center;
+    width: 200px;
+    height: 42px;
+    border: none;
+    background-color: #1D1D1D;
+    border-radius: 8px;
+    margin-left: 16px;
+    margin-top: 20px;
+    gap: 6px;
+    padding-left: 16px;
+}
+
+.popular__fields {
+    background-color: #0F0F0F;
+    color: #C8C8C8;
+    font-weight: 500;
+    font-size: 14px;
+}
+
+.popularGames {
+    background-color: #0F0F0F;
+}
+
+.popular__fields-top {
+    display: flex;
+    gap: 10px;
+}
+
+.green__block {
+    color: #fff;
+    background-color: #28B328;
+    border: none;
+    border-radius: 8px;
+    width: 137px;
+    height: 42px;
+    display: flex;
+    align-items: center;
+    margin-top: 20px;
+    justify-content: center;
+    cursor: pointer;
+}
+
+.field__left {
+    display: flex;
+    align-items: center;
+    width: 171px;
+    height: 38px;
+    border: none;
+    border-radius: 8px;
+    justify-content: space-around;
+    background-color: #333333;
+}
+
+.field__right {
+    display: flex;
+    align-items: center;
+    width: 171px;
+    height: 38px;
+    border: none;
+    border-radius: 8px;
+    justify-content: space-around;
+    background-color: #333333;
+}
+
+.popular__fields-bot {
+    display: flex;
+    margin-top: 16px;
+    margin-left: 16px;
+    gap: 16px;
+}
+.popular__games {
+    margin-top: 21px;
+}
+.game__1 {
+    margin-left: 16px;
+    display: flex;
+}
+
+.game__2 {
+    margin-left: 16px;
+    display: flex;
+}
+.game__3 {
+    margin-left: 16px;
+    display: flex;
+}
+
+.game__4 {
+    margin-left: 16px;
+    display: flex;
+}
+
+.games__button-block {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 17px;
+    color: #fff;
+}
+
+.games__button-block button {
+    width: 135px;
+    height: 42px;
+    border: none;
+    border-radius: 8px;
+    background-color: #333333;
+    font-weight: 600;
+    font-size: 14px;
+    color: #fff;
+    cursor: pointer;
+}
+
+.games__button-block p {
+    font-weight: 400;
+    font-size: 10px;
+    margin-top: 12px;
+    padding-bottom: 50px;
+}
+
+.view_par {
+    color: #fff;
+    margin-right: 16px;
+}
+
+.popular__header img {
+    cursor: pointer;
 }
