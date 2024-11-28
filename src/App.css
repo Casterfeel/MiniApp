@@ -193,6 +193,9 @@
 }
 
 .main__btn {
+    appearance: none;
+    -webkit-appearance: none;
+    -moz-appearance: none;
     width: 100px;
     height: 34px;
     border: none;
