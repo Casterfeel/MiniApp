@@ -5,70 +5,41 @@
     .App {
         overflow-x: hidden;
     }
+
     .header {
-        width: 320px;
+        padding-left: 5px;  
+        padding-right: 5px;
     }
-    .header__right {
-        display: flex;
-        flex-direction: column;
-        margin-right: 20px;
+
+    .footer__info, .footer__copyright, .blocks {
+        width: 100vw; 
+        max-width: 100%; 
+    }
+
+    .main {
+        max-width: 100%; 
+
+    }
+
+    .main__welcome-block {
+        background-size: 140%;
     }
 
     .header__right-price {
-        border-radius: 8px 8px 8px 8px !important;
+        padding-left: 5px;
+        padding-right: 5px;
     }
 
-    .header__right-plus {
-        width: 100px !important;
-        margin-top: 5px; 
-    }
-    .main {
-        width: 300px;
-    }
-    .footer__info {
-        width: 320px;
-    }
-    .footer__copyright {
-        width: 320px;
-    }
-    .blocks {
-        width: 320px;
-    }
-    .main__welcome-block {
-        color: #fff;
-        border: none;
-        border-radius: 10px;
-        background-image: url('../src/assets/man.png');
-        background-size: 150% !important;
-        background-position: right ;
-        padding-left: 10px;
-    }
-    .popular__games-blocks img{
-        width: 100px;
-    }
-    .new__games-blocks img{
-        width: 100px;
-    }
-    .casino__games-blocks img{
-        width: 100px;
-    }
-    .sports__games-blocks img{
-        width: 100px;
-    }
-    .game__1 img {
-        width: 100px;
-    }
-    .game__2 img {
-        width: 100px;
-    }
-    .game__3 img {
-        width: 100px;
-    }
-    .game__4 img {
-        width: 100px;
-    }
     .search__block {
-        width: 130px !important;
+        width: 100px;  
+    }
+
+    .field__left, .field__right {
+        width: 100px;  
+    }
+
+    .search__block {
+        width: 140px !important;
     }
     .field__left {
         width: 136px !important;
@@ -76,25 +47,36 @@
     .field__right {
         width: 136px !important;
     }
-}
 
-@media(max-width: 425px) {
-    .App {
-        overflow-x: hidden;
-        box-sizing: border-box;
+    .popular__top img{
+        width: 90px;
     }
-
-    .main__welcome-block {
-        color: #fff;
-        border: none;
-        border-radius: 10px;
-        background-image: url('../src/assets/man.png');
-        background-size: 150% !important;
-        background-position: right ;
-        padding-left: 10px;
+    .popular__bot img{
+        width: 90px;
     }
+    .new__top img{
+        width: 90px;
+    }
+    .new__bot img{
+        width: 90px;
+    }
+    .casino__top img{
+        width: 90px;
+    }
+    .casino__bot img{
+        width: 90px;
+    }
+    .sports__top img{
+        width: 90px;
+    }
+    .sports__bot img{
+        width: 90px;
+    }
+    .game__row img {
+        width: 90px;
+    }
+}   
 
-}
 
 
 .poppins-light {
@@ -103,14 +85,22 @@
 
 * {
     font-family: "Poppins";
+    box-sizing: border-box ; 
 }
 
 .App {
-    max-width: 390px;
-    width: 100%;
+    max-width: 425px;
+    width: 100vw;
     margin: 0 auto;
-    padding: 0;
+    overflow-x: hidden;
 }
+
+.game__row {
+    display: flex;
+    justify-content: space-around;
+  }
+  
+
 
 .header {
     background-color: #1D1D1D;
@@ -233,7 +223,7 @@
 .main__pars {
     color: #fff;
     display: flex;
-    gap: 30px;
+    gap: 40px;
     background-color: #1D1D1D;
     height: 42px;
     align-items: center;
@@ -241,6 +231,7 @@
     border-radius: 8px;
     padding-right: 16px;
     padding-left: 16px;
+    width: 100%;
 }
 
 .main__pars p {
@@ -279,10 +270,12 @@
 
 .popular__top {
     display: flex;
+    justify-content: space-between;
 }
 
 .popular__bot {
     display: flex;
+    justify-content: space-between;
 }
 
 .new__left {
@@ -311,10 +304,12 @@
 
 .new__top {
     display: flex;
+    justify-content: space-between;
 }
 
 .new__bot {
     display: flex;
+    justify-content: space-between;
 }
 
 .view {
@@ -356,10 +351,12 @@
 
 .casino__top {
     display: flex;
+    justify-content: space-between;
 }
 
 .casino__bot {
     display: flex;
+    justify-content: space-between;
 }
 
 
@@ -397,11 +394,13 @@
 
 .sports__top {
     display: flex;
+    justify-content: space-between;
 }
 
 .sports__bot {
     display: flex;
     padding-bottom: 44px;
+    justify-content: space-between;
 }
 
 .footer__info {
@@ -613,25 +612,11 @@
 }
 .popular__games {
     margin-top: 21px;
-}
-.game__1 {
-    margin-left: 16px;
-    display: flex;
+    width: 100%;
 }
 
-.game__2 {
-    margin-left: 16px;
-    display: flex;
-}
-.game__3 {
-    margin-left: 16px;
-    display: flex;
-}
 
-.game__4 {
-    margin-left: 16px;
-    display: flex;
-}
+
 
 .games__button-block {
     display: flex;
